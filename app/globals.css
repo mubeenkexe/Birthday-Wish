@@ -3,25 +3,12 @@
 @tailwind utilities;
 
 * {
-  @apply p-0 m-0 box-border
+  @apply p-0 m-0 box-border;
+}
+.message, .message_two, .message_three {
+  @apply h-screen flex justify-center items-center bg-black
 }
 
-body {
-  @apply bg-black
-}
-
-.backgroundImage {
-  @apply absolute h-[140vh] w-full top-0 brightness-50
-}
-
-.introImage {
-  @apply absolute w-[350px] h-[475px] brightness-75
-}
-
-.introContainer {
-  @apply mt-[45vh] flex justify-center items-center relative
-}
-
-.introContainer h1 {
-  @apply z-10 text-white text-7xl uppercase font-bold text-center
+.message_heading, .message_heading_two, .message_heading_three {
+  @apply font-bold text-8xl text-white opacity-0 
 }

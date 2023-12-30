@@ -1,8 +1,9 @@
-"use client"
-import Intro from "@/components/Intro";
+"use client";
+import Messages from "@/components/Messages";
 import { useEffect } from "react";
 
 export default function Home() {
+
   useEffect(() => {
     (
       async () => {
@@ -10,11 +11,11 @@ export default function Home() {
         const locomotiveScroll = new LocomotiveScroll();
       }
     )()
-  }, []);
+  }, [])
 
-  return(
-    <main className="main">
-      <Intro />
-    </main>
+  return (
+    <>
+      <Messages />
+    </>
   );
 }
